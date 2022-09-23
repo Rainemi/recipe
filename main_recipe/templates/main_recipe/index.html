@@ -4,7 +4,7 @@
 
 {% for recipe in recipes %}
 <div class="card" style="width: 18rem; display:inline-flex;">
-    <img class="card-img-top" src="{{recipe.image.url}}" alt="Card image cap">
+    <img class="card-img-top" src="{{recipe.how_it_looks.url}}" alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">{{ recipe.name }}</h5>
       <p class="card-text">{{ recipe.description }}</p>
