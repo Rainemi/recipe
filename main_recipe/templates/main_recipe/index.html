@@ -1,0 +1,18 @@
+{% extends 'main_recipe/layout.html' %}
+{%block content%}
+<h1>The Recipes Available</h1>
+
+{% for recipe in recipes %}
+<div class="card" style="width: 18rem; display:inline-flex;">
+    <img class="card-img-top" src="{{recipe.image.url}}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{ recipe.name }}</h5>
+      <p class="card-text">{{ recipe.description }}</p>
+      <span>{{ recipe.price }}</span>
+      <a href="#" class="btn btn-primary">View more recipe</a>
+    </div>
+  </div>
+{% endfor %}
+
+
+{% endblock content %}
